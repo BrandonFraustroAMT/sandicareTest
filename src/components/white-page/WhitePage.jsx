@@ -2,9 +2,16 @@ import './WhitePage.css'
 
 import Button from '../button/Button'
 
+/* Logos */
 import dhl from '../../assets/logos/dhl.svg'
 import gnp from '../../assets/logos/gnp.svg'
 import heb from '../../assets/logos/heb.svg'
+
+/* Certificaciones */
+import hipaa from '../../assets/img/certificacionhipaa.png'
+import iso9001 from '../../assets/img/certificacioniso9001.png'
+import gdpr from '../../assets/img/certificationgdpr.png'
+import sandi from '../../assets/img/sandi.png'
 
 const WhitePage = () => {
     return (
@@ -35,21 +42,21 @@ const WhitePage = () => {
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"186px", display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificationgdpr.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src={gdpr} style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"184px",display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificacioniso9001.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src={iso9001} style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"184px",display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificacionhipaa.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src={hipaa} style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
@@ -157,12 +164,12 @@ const WhitePage = () => {
                                             <div className="Quote__Author-sc-1nprldu-2 eOLvDU">
                                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained Quote__Headshot-sc-1nprldu-3 lasILu">
                                                     <div style={{maxWidth:"180px",display:"block"}}>
-                                                        <img alt="sandy" role="presentation" aria-hidden="true" srcSet="src/assets/img/sandi.png" style={{maxWidth:"100%",display:"block",position:"static",borderRadius:"50%"}}/>
+                                                        <img alt="sandy" role="presentation" aria-hidden="true" srcSet={sandi} style={{maxWidth:"100%",display:"block",position:"static",borderRadius:"50%"}}/>
                                                     </div>
-                                                    <img aria-hidden="true" data-placeholder-image="" style={{opacity:"0",transition:"opacity 500ms linear",objectFit:"cover"}} decoding="async" srcSet="/src/assets/img/sandi.png" alt="Sandy"/>
+                                                    <img aria-hidden="true" data-placeholder-image="" style={{opacity:"0",transition:"opacity 500ms linear",objectFit:"cover"}} decoding="async" srcSet={sandi} alt="Sandy"/>
                                                     {/* <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src="" srcSet="#" alt="Chris Hogg"/> */}
                                                     <noscript>
-                                                        <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src="/src/assets/img/sandi.png" srcSet="#" alt="Chris Hogg"/>
+                                                        <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src={sandi} srcSet="#" alt="Sandi"/>
                                                     </noscript>
                                                 </div>
                                                 <span className="Quote__Name-sc-1nprldu-4 dwsAoE">Sandi</span>

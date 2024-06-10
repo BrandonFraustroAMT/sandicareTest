@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import "./Scroll.css";
 
+import landingImage1 from '../../assets/img/Mockups_Landing-02.png'
+import landingImage2 from '../../assets/img/Mockups_Landing-03.png'
+import landingImage3 from '../../assets/img/Mockups_Landing-04.png'
+import landingImage4 from '../../assets/img/Mockups_Landing-05.png'
+import landingImage5 from '../../assets/img/Mockups_Landing-06.png'
+import landingImage6 from '../../assets/img/Mockups_Landing-07.png'
+import landingImage7 from '../../assets/img/Mockups_Landing-08.png'
+
 function lerp(start, end, t) {
   return start + (end - start) * t;
 }
@@ -26,7 +34,8 @@ const Scroll = () => {
       
       let newTranslateY = translateY;
 
-      if (scale >= 6.194 && scrollTop <= 7721) {
+      console.log(scale);
+      if (scale >= 6 && scrollTop <= 7721) {
         // Calcula la nueva posición de translateY usando interpolación lineal
         newTranslateY = lerp(translateY, additionalOffset, 0.7);
         setTranslateY(newTranslateY);
@@ -107,7 +116,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-02.png" alt="" />
+                    <img src={landingImage1} alt="" />
                   </div>
                 </div>
               </div>
@@ -169,7 +178,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-03.png" alt="" />
+                    <img src={landingImage2} alt="" />
                   </div>
                 </div>
               </div>
@@ -230,7 +239,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-04.png" alt="" />
+                    <img src={landingImage3} alt="" />
                   </div>
                 </div>
               </div>
@@ -289,7 +298,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-05.png" alt="" />
+                    <img src={landingImage4} alt="" />
                   </div>
                 </div>
               </div>
@@ -349,7 +358,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-06.png" alt="" />
+                    <img src={landingImage5} alt="" />
                   </div>
                 </div>
               </div>
@@ -410,7 +419,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-07.png" alt="" />
+                    <img src={landingImage6} alt="" />
                   </div>
                 </div>
               </div>
@@ -471,7 +480,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="/src/assets/img/Mockups_Landing-08.png" alt="" />
+                    <img src={landingImage7} alt="" />
                   </div>
                 </div>
               </div>
