@@ -204,10 +204,11 @@ const Main = () => {
             <div className='video-container'>
               <div className='video-wrapper'>
                 <video id="scalable-video"  muted loop>
-                  <source src="/src/assets/video/video-ilustracion.mov" type="video/mp4" />
+                  <source src="/src/assets/video/video-ilustracion.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
+
             <section className="sc-02-03-Focus__Wrapper-sc-qcljt5-0 enpaAV">
               <div className={"sc-02-03-Focus__Inner-sc-qcljt5-1 euIDBC"} >
                   <div  className="sc-02-03-Focus__Top-sc-qcljt5-2 iWNRYx">

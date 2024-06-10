@@ -179,3 +179,17 @@
 .dBrGFf a {
     color: var(--silver05);
 }
+
+
+.cls-1 {
+    fill: #13395f;
+  }
+
+  .cls-1, .cls-2 {
+    stroke-width: 0px;
+  }
+
+  .cls-2 {
+    fill: #c8133b;
+  }
+  
