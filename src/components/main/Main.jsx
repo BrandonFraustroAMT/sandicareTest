@@ -5,6 +5,9 @@ import Scroll from '../scrolls/Scroll';
 import WhitePage from '../white-page/WhitePage'
 import Button from '../button/Button';
 
+import gifHero from '../../assets/video/gif-hero.gif'
+import videoIlustracion from '../../assets/video/video-ilustracion.mp4'
+
 const words = [
   'Check-Up Personalizado',
   'Monitoreo Remoto',
@@ -170,7 +173,7 @@ const Main = () => {
             {/* MAIN HEADER */}
             <div className="container-main__animated">
               <div className='sc-01-Hero__Content-video'>
-                <img src="/src/assets/video/gif-hero.gif" alt="Hero gif" />
+                <img src={gifHero} alt="Hero gif" />
                 {/* <video autoPlay muted loop>
                   <source src="src/assets/video/video-hero.mp4" type="video/mp4" />
                 </video> */}
@@ -204,7 +207,7 @@ const Main = () => {
             <div className='video-container'>
               <div className='video-wrapper'>
                 <video id="scalable-video"  muted loop>
-                  <source src="/src/assets/video/video-ilustracion.mp4" type="video/mp4" />
+                  <source src={videoIlustracion} type="video/mp4" />
                 </video>
               </div>
             </div>
