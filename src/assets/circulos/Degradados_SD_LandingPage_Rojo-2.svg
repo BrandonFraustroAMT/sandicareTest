@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3000 3000">
+  <defs>
+    <style>
+      .circuloRojo{
+        fill: url(#Degradado_sin_nombre_38);
+        stroke-width: 0px;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_38" data-name="Degradado sin nombre 38" cx="1500" cy="1500" fx="1500" fy="1500" r="2000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1d6dc"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle class="circuloRojo" cx="1500" cy="1500" r="2000" fill="url(#Degradado_sin_nombre_38)"/>
+</svg>

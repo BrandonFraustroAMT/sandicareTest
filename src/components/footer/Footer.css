@@ -1,0 +1,182 @@
+.eoSKp {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--blue05);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    overflow: clip;
+    height: 727px;
+}
+.iBYMzF {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 104px 50px 80px;
+    gap: 24px;
+}
+.lfkvfh {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.kdxuVr {
+    position: relative;
+}
+.ffyGBT {
+    height: auto;
+    width: 386px;
+}
+.eFrRhv {
+    font-family: Gilroy, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 92%;
+    letter-spacing: -0.48px;
+    color: var(--silver05);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.dAoYJu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 25px;
+}
+.iuPTND {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+    gap: 48px;
+}
+.chXumO {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 144%;
+    letter-spacing: -0.56px;
+    color: var(--silver04);
+    transition: color 0.5s ease 0s;
+    cursor: pointer;
+    gap: 8px;
+}
+.kSbZDT {
+    height: auto;
+    transition: transform 0.5s ease 0s;
+    width: 13px;
+}
+.kSbZDT path {
+    transition: stroke 0.5s ease 0s;
+}
+.ixydcB {
+    width: fit-content;
+    background-color: var(--lavender01);
+    border-radius: 99vw;
+    transition: background-color 0.5s ease 0s;
+    padding: 8px;
+}
+.cKrAwk {
+    width: fit-content;
+    min-width: 100%;
+    background-color: var(--silver05);
+    border-radius: 99vw;
+    font-family: Gilroy, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.51px;
+    color: var(--blue02);
+    transition: background-color 0.5s ease 0s;
+    white-space: nowrap;
+    padding: 15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 1px 4px 0px, rgb(178, 176, 255) 0px -1px 3px 0px inset, rgb(60, 57, 185) 0px 0px 0px 1px;
+}
+.dIIGYM {
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    height: 17px;
+    gap: 17px;
+}
+.hQTNOY {
+    transition: transform 0.25s ease 0s;
+}
+.eLJPQk {
+    position: relative;
+    width: 100%;
+    height: 265px;
+}
+.cHprFt {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: clip visible;
+}
+.dmznxe {
+    position: absolute;
+    inset: -100px;
+    z-index: 1;
+    pointer-events: none;
+}
+.jLCIUO {
+    position: absolute;
+    background-color: var(--silver05);
+    cursor: none;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 44px;
+}
+.jLCIUO svg {
+    width: 60px;
+}
+.CFbaF {
+    height: auto;
+    width: 38px;
+}
+.jLCIUO svg path {
+    fill: var(--blue05);
+}
+.dBrGFf {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: end;
+    font-family: Gilroy, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 92%;
+    letter-spacing: -0.48px;
+    color: var(--silver05);
+    width: 100%;
+    gap: 48px;
+}
+.glLHje {
+    font-family: Gilroy, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 92%;
+    letter-spacing: -0.48px;
+    color: var(--silver05);
+}
+.dBrGFf a {
+    color: var(--silver05);
+}

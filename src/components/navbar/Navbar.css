@@ -1,0 +1,32 @@
+.iXruOj {
+    display: grid;
+    place-items: center;
+    height: auto;
+    background: var(--blue05);
+  }
+  
+  .ihApXk {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 0px;
+    z-index: 4;
+  }
+  
+  .chXumO {
+    margin: 0;
+  padding: 0;
+    display: flex;
+    align-items: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 144%;
+    color: var(--silver04);
+    transition: color 0.5s ease;
+    cursor: pointer;
+    gap: 8px;
+  }
+  

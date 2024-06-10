@@ -1,0 +1,45 @@
+@supports (color:color(display-p3 0 0 0)) {
+  :root {
+      --blackText: #242523;
+      --redText: #D34861;
+      --whiteBG: #f8f8f8;
+      --blueLogo: #12395F;
+  }
+}
+
+* {
+  text-rendering: geometricprecision;
+  -webkit-font-smoothing: antialiased;
+}
+*, :after, :before {
+  box-sizing: border-box;
+  z-index: 4;
+}
+html {
+  color: var(--blackText);
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  letter-spacing: -0.72px;
+  background: var(--whiteBG);
+}
+
+a, button {
+  cursor: revert;
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+}
+img {
+  display: block;
+  width: 100%; 
+  height: auto; 
+  object-fit: contain; 
+  object-position: center; 
+}
+body {
+  margin: 0 auto;
+}

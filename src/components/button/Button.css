@@ -1,0 +1,44 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.wrapper-link {
+  width: fit-content;
+  background-color: var(--redText);
+  border-radius: 99vw;
+  transition: background-color 0.1s ease;
+  padding: 8px;
+}
+
+.button-wrapper {
+  width: fit-content;
+  min-width: 100%;
+  background-color: var(--blueLogo);
+  border-radius: 99vw;
+  font-family: Gilroy, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.51px;
+  color: var(--whiteBG);
+  transition: background-color 0.5s ease;
+  white-space: nowrap;
+  padding: 15px 30px;
+}
+.button-wrapper__div {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  height: 17px;
+  gap: 17px;
+}
+.button-wrapper__span {
+  transition: transform 0.25s ease;
+}
+
+
+.button-wrapper.moved  {
+  transform: translateX(590px); /* Ajusta esta cantidad según sea necesario */
+}
