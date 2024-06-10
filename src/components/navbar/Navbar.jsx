@@ -1,5 +1,5 @@
 import './Navbar.css';
-import logo from '../../assets/logos/logo.svg'
+import logo from '/src/assets/logos/logo.svg'
 
 import Button from '../button/Button';
 

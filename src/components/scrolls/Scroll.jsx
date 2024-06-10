@@ -107,7 +107,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-02.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-02.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-03.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-03.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-04.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-04.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -272,7 +272,7 @@ const Scroll = () => {
                 Toma de Muestras <span>Programada</span>{" "}
               </div>
               <div className="TextParts__Description-sc-1j2eo1t-5 eEsxam">
-                Las muestras se recolectan en las fechas establecidas, ya sea en
+                Las muestras son tomadas en las fechas establecidas, ya sea en
                 el lugar de trabajo o en nuestra red de laboratorios de Sandi.
               </div>
             </div>
@@ -289,7 +289,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-05.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-05.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -328,7 +328,7 @@ const Scroll = () => {
                 05.
               </div>
               <div className="TextParts__BlueTitle-sc-1j2eo1t-3 TextParts__GreenTitle-sc-1j2eo1t-4 bjwia-D">
-                Envio de <span>Resultados Personalizados</span>{" "}
+                Envio de <span>Resultados Interpretados</span>{" "}
               </div>
               <div className="TextParts__Description-sc-1j2eo1t-5 eEsxam">
                 Los resultados se envían por correo electrónico, asegurando que
@@ -349,7 +349,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-06.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-06.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -410,7 +410,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-07.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-07.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -455,7 +455,7 @@ const Scroll = () => {
                 Damos un seguimiento personalizado con asistencia en línea de
                 médicos generales, médicos internistas, nutricionistas,
                 psicoterapeutas y/o estudios de laboratorio correspondientes con
-                nuestra servicio de Seguimiento y monitoreo Sandi Check
+                nuestro servicio de Seguimiento y monitoreo Sandi Check
               </div>
             </div>
           </div>
@@ -471,7 +471,7 @@ const Scroll = () => {
                   className="ScaledContent__Inner-sc-mvrs02-1 eOUgPq"
                 >
                   <div className="IllustrationOne__Graphic-sc-myfi4b-1 lnklTH">
-                    <img src="src/assets/img/Mockups_Landing-08.png" alt="" />
+                    <img src="/src/assets/img/Mockups_Landing-08.png" alt="" />
                   </div>
                 </div>
               </div>

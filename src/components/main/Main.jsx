@@ -61,7 +61,7 @@ const Main = () => {
       setScaleVideo(newScale);
       setTranslateVideoX(newTranslateX);
 
-      if (newScale == 1) {
+      if (newScale <= 1.15) {
         targetTranslateX = 0;
         video.style.right = `${rightInitial}px`;
         video.style.width = `${widthInitial}px`;
@@ -170,7 +170,7 @@ const Main = () => {
             {/* MAIN HEADER */}
             <div className="container-main__animated">
               <div className='sc-01-Hero__Content-video'>
-                <img src="src/assets/video/gif-hero.gif" alt="Hero gif" />
+                <img src="/src/assets/video/gif-hero.gif" alt="Hero gif" />
                 {/* <video autoPlay muted loop>
                   <source src="src/assets/video/video-hero.mp4" type="video/mp4" />
                 </video> */}
@@ -204,7 +204,7 @@ const Main = () => {
             <div className='video-container'>
               <div className='video-wrapper'>
                 <video id="scalable-video"  muted loop>
-                  <source src="src/assets/video/video-ilustracion.mov" type="video/mp4" />
+                  <source src="/src/assets/video/video-ilustracion.mov" type="video/mp4" />
                 </video>
               </div>
             </div>

@@ -171,11 +171,9 @@
 }
 .bXdKZU {
     display: grid;
-    border: 1px solid var(--redText);
     grid-template-columns: repeat(3, 1fr);
 }
 .bpANgv {
-    border-right: 1px solid var(--redText);
     display: grid;
     place-items: center;
     position: relative;

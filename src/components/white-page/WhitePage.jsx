@@ -35,21 +35,21 @@ const WhitePage = () => {
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"186px", display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="src/assets/img/certificationgdpr.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificationgdpr.png" style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"184px",display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="src/assets/img/certificacioniso9001.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificacioniso9001.png" style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
                             <div className="sc-05-WhiteGlove__LogoWrapper-sc-ydg9ft-7 dOktKr">
                                 <div data-gatsby-image-wrapper="" className="gatsby-image-wrapper gatsby-image-wrapper-constrained sc-05-WhiteGlove__Logo-sc-ydg9ft-5 kYBuYI">
                                     <div style={{maxWidth:"184px",display:"block"}}>
-                                        <img alt="" role="presentation" aria-hidden="true" src="src/assets/img/certificacionhipaa.png" style={{maxWidth:"100%",display:"block"}}/>
+                                        <img alt="" role="presentation" aria-hidden="true" src="/src/assets/img/certificacionhipaa.png" style={{maxWidth:"100%",display:"block"}}/>
                                     </div>
                                 </div>
                             </div>
@@ -159,10 +159,10 @@ const WhitePage = () => {
                                                     <div style={{maxWidth:"180px",display:"block"}}>
                                                         <img alt="sandy" role="presentation" aria-hidden="true" srcSet="src/assets/img/sandi.png" style={{maxWidth:"100%",display:"block",position:"static",borderRadius:"50%"}}/>
                                                     </div>
-                                                    <img aria-hidden="true" data-placeholder-image="" style={{opacity:"0",transition:"opacity 500ms linear",objectFit:"cover"}} decoding="async" srcSet="src/assets/img/sandi.png" alt="Sandy"/>
+                                                    <img aria-hidden="true" data-placeholder-image="" style={{opacity:"0",transition:"opacity 500ms linear",objectFit:"cover"}} decoding="async" srcSet="/src/assets/img/sandi.png" alt="Sandy"/>
                                                     {/* <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src="" srcSet="#" alt="Chris Hogg"/> */}
                                                     <noscript>
-                                                        <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src="/static/e7724076244b074ccf3c6ac81e3e17e1/4c835/chris-hogg.webp" srcSet="#" alt="Chris Hogg"/>
+                                                        <img width="180" height="180" data-main-image="" style={{objectFit:"cover",opacity:"1"}} sizes="(min-width: 180px) 180px, 100vw" decoding="async" loading="lazy" src="/src/assets/img/sandi.png" srcSet="#" alt="Chris Hogg"/>
                                                     </noscript>
                                                 </div>
                                                 <span className="Quote__Name-sc-1nprldu-4 dwsAoE">Sandi</span>
@@ -283,7 +283,10 @@ const WhitePage = () => {
                                             <div className="line-inner" style={{display: "block", textAlign: "center", position: "relative", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>Agenda una reunión con </div>
                                         </div>
                                         <div className="line-wrapper" style={{display: "block", textAlign: "center", position: "relative"}}>
-                                            <div className="line-inner" style={{display: "block", textAlign: "center", position: "relative", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>con un experto de CheckA Tu Salud</div>
+                                            <div className="line-inner" style={{display: "block", textAlign: "center", position: "relative", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>con un experto de CheckA</div>
+                                        </div>
+                                        <div className="line-wrapper" style={{display: "block", textAlign: "center", position: "relative"}}>
+                                            <div className="line-inner" style={{display: "block", textAlign: "center", position: "relative", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>Tu Salud</div>
                                         </div>
                                     </div>
                                 </h1>
