@@ -81,7 +81,7 @@ const Footer = () => {
               Términos y condiciones
             </a>
             <a
-              href="https://www.linkedin.com/company/impilo-inc/"
+              href="#"
               style={{gridArea:"linkedin"}}
             >
               Linkedin
