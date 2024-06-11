@@ -7,8 +7,8 @@
 
 .container-background svg {
   position: fixed;
-  width: 70vw;
-  height: 70vw;
+  width: 100vw;
+  height: 100vw;
   animation: move-background 10s infinite alternate ease-in-out;
 }
 
@@ -49,5 +49,13 @@
   }
   100% {
     transform: translate(-60px, -60px);
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .container-background svg {
+    width: 70vw;
+    height: 70vw;
   }
 }
