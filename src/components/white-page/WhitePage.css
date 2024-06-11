@@ -538,7 +538,8 @@
         flex-direction: column;
         -webkit-box-align: center;
         align-items: center;
-        padding: 135px 0px 173px;
+        /* padding: 135px 0px 173px; */
+        padding: 135px 0px 0px;
     }
     .hxgcnv {
         font-size: 92px;

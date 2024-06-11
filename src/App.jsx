@@ -30,9 +30,10 @@ function App() {
           <circle className="circuloAzul" cx="1500" cy="1500" r="2000"/>
         </svg>
       </div>
-        <Navbar />
-        <Main /> 
-        <Footer />
+      <Navbar />
+      <Main /> 
+      <div className="barra"></div>
+        {/* <Footer /> */}
     </>
   )
 }
