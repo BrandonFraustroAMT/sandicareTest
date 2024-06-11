@@ -7,7 +7,7 @@
 
 .container-background svg {
   position: fixed;
-  width: 150%;
+  width: 230%;
   height: 100%;
   animation: move-background 10s infinite alternate ease-in-out;
 }
