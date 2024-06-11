@@ -64,18 +64,18 @@ const Main = () => {
       setScaleVideo(newScale);
       setTranslateVideoX(newTranslateX);
 
-      if (newScale >= 1.40) {
-        if (video.paused) {
-          video.play();
-        }
-      } else {
-        if (!video.paused) {
-          video.pause();
-          video.currentTime = 0;
-        }
-      }
-
       if (window.innerWidth >= 1024) {
+        if (newScale >= 1.40) {
+          if (video.paused) {
+            video.play();
+          }
+        } else {
+          if (!video.paused) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        }
+
         if (newScale <= 1.15) {
           targetTranslateX = 0;
           video.style.right = `${rightInitial}px`;
@@ -95,6 +95,13 @@ const Main = () => {
           video.style.borderRadius = "25px";
           video.style.transform = `scale(${newScale}) translate(-${translateVideoFinal}px, 0px)`;
         }
+      }
+      else {
+        // Para dispositivos móviles
+        if (!video.paused) {
+          video.pause();
+        }
+        video.controls = true;
       }
     };
 
