@@ -1,13 +1,14 @@
 .eoSKp {
     width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--blue05);
     bottom: 0px;
     left: 0px;
     z-index: 1;
     overflow: clip;
-    height: 488px;
+    height: 468px;
 }
 .iBYMzF {
     width: 100%;
@@ -15,8 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0px 50px 0px;
-    gap: 24px;
+    padding: 0px 35px 0px;
+    gap: 0px;
 }
 .lfkvfh {
     display: flex;
@@ -117,7 +118,7 @@
 .eLJPQk {
     position: relative;
     width: 100%;
-    height: 265px;
+    height: 200px;
 }
 .cHprFt {
     width: 100%;
@@ -165,7 +166,7 @@
     letter-spacing: -0.48px;
     color: var(--silver05);
     width: 100%;
-    gap: 48px;
+    gap: 39px;
 }
 .glLHje {
     font-family: Gilroy, sans-serif;
@@ -193,3 +194,24 @@
     fill: #c8133b;
   }
   
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .eoSKp {
+        width: 100%;
+        display: flex;
+        place-items: center;
+        background-color: var(--blue05);
+        bottom: 0px;
+        left: 0px;
+        z-index: 1;
+        overflow: clip;
+        height: 488px;
+    }
+    .iBYMzF {
+        padding: 0px 50px 0px;
+        gap: 24px;
+    }
+    .eLJPQk {
+        height: 265px;
+    }
+}

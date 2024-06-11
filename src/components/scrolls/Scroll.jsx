@@ -12,7 +12,7 @@ import landingImage7 from '../../assets/img/Mockups_Landing-08.png'
 function lerp(start, end, t) {
   return start + (end - start) * t;
 }
-const threshold = 3348;
+const threshold = 3330;
 
 const Scroll = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -34,8 +34,7 @@ const Scroll = () => {
       
       let newTranslateY = translateY;
 
-      console.log(scale);
-      if (scale >= 6 && scrollTop <= 7721) {
+      if (scale >= 5.7 && scrollTop <= 7748) {
         // Calcula la nueva posición de translateY usando interpolación lineal
         newTranslateY = lerp(translateY, additionalOffset, 0.7);
         setTranslateY(newTranslateY);
@@ -43,7 +42,7 @@ const Scroll = () => {
         boxMirrorChild.style.height = "974px";
         boxMirrorChild.style.borderBottom = "90px solid #F8F8F8";
       } else {
-        boxMirrorChild.style.height = "910px";
+        boxMirrorChild.style.height = "937px";
       }
 
       setLastScrollTop(scrollTop);
@@ -489,7 +488,7 @@ const Scroll = () => {
 
           {/* <div className="background-box"></div>
           <div className="background-boxFront"></div> */}
-          <div className="pin-spacer boxMirror" style={{order: "0", placeSelf: "auto", gridArea: "auto", zIndex: "4", float: "none", flexShrink: "1", marginTop: "3213px", inset: "-200px 0px 2843.24px 720px", position: "absolute", flexBasis: "auto", overflow: "visible", boxSizing: "border-box", width: "720px", height: "981px", padding: "0px 0px 2000px", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>
+          <div className="pin-spacerScroll boxMirror" style={{order: "0", placeSelf: "auto", gridArea: "auto", zIndex: "4", float: "none", flexShrink: "1", marginTop: "3213px", inset: "-200px 0px 2843.24px 720px", position: "absolute", flexBasis: "auto", overflow: "visible", boxSizing: "border-box", width: "720px", height: "981px", padding: "0px 0px 2000px", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)"}}>
             <div className="sc-04-HowItWorks__PseudoBox-sc-iepctg-0 kCSdCn" style={{translate: "none", rotate: "none", scale: "none", inset: "0px auto auto 0px", margin: "0px", maxWidth: "720px", width: "720px", maxHeight: "1109px", height: "907px", padding: "0px", transform: "translate(0px, 0px)"}}></div>
           </div>
         </div>

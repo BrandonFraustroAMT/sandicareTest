@@ -18,14 +18,14 @@
   background-color: var(--blueLogo);
   border-radius: 99vw;
   font-family: Gilroy, sans-serif;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.51px;
   color: var(--whiteBG);
   transition: background-color 0.5s ease;
   white-space: nowrap;
-  padding: 15px 30px;
+  padding: 12px 15px;
 }
 .button-wrapper__div {
   overflow: clip;
@@ -41,4 +41,10 @@
 
 .button-wrapper.moved  {
   transform: translateX(590px); /* Ajusta esta cantidad según sea necesario */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .button-wrapper{
+    font-size: 17px;
+  }
 }

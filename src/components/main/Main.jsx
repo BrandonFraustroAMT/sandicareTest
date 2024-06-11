@@ -21,7 +21,7 @@ function lerp(start, end, t) {
 }
 //posicion inicial para desplazamiento del botón
 const thresholdX = 2503;
-const thresholdY = 2891;
+const thresholdY = 2853;
 
 const Main = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -64,12 +64,6 @@ const Main = () => {
       setScaleVideo(newScale);
       setTranslateVideoX(newTranslateX);
 
-      if (newScale <= 1.15) {
-        targetTranslateX = 0;
-        video.style.right = `${rightInitial}px`;
-        video.style.width = `${widthInitial}px`;
-      }
-
       if (newScale >= 1.40) {
         if (video.paused) {
           video.play();
@@ -81,17 +75,26 @@ const Main = () => {
         }
       }
 
-      if (newScale < 1.5) {
-        // El video se va posicionando hacia la izquierda mientras va creciendo
-        video.style.transform = `scale(${newScale}) translate(-${newTranslateX}px, 0px)`;
-        video.style.borderRadius = "25px";
-        setTranslateVideoFinal(newTranslateX);
-      } else {
-        // El video se mantiene en el eje x mientras va creciendo
-        video.style.right = "12px";
-        video.style.width = "1000px";
-        video.style.borderRadius = "25px";
-        video.style.transform = `scale(${newScale}) translate(-${translateVideoFinal}px, 0px)`;
+      if (window.innerWidth >= 1024) {
+        if (newScale <= 1.15) {
+          targetTranslateX = 0;
+          video.style.right = `${rightInitial}px`;
+          video.style.width = `${widthInitial}px`;
+        }
+
+
+        if (newScale < 1.5) {
+          video.style.transform = `scale(${newScale}) translate(-${newTranslateX}px, 0px)`;
+          video.style.right = "60px";
+          video.style.borderRadius = "25px";
+          setTranslateVideoFinal(newTranslateX);
+        } else {
+          // El video se mantiene en el eje x mientras va creciendo
+          video.style.right = "12px";
+          video.style.width = "1000px";
+          video.style.borderRadius = "25px";
+          video.style.transform = `scale(${newScale}) translate(-${translateVideoFinal}px, 0px)`;
+        }
       }
     };
 
@@ -146,17 +149,21 @@ const Main = () => {
       
       let newTranslateX = translateX;
       let newTranslateY = translateY;
-      if(scale >= 4.87 && scrollTop <= 7721) {
-        if(scrollTop >= 2872 && scrollTop <= 7721) {
-          newTranslateY = lerp(translateY, additionalOffsetY, 1);
-          setTranslateY(newTranslateY);
-          buttonCheck.style.transform = `translate(590.4px, ${newTranslateY}px)`;
-        }else {
-          newTranslateX = lerp(translateX, additionalOffsetX, 1.6);
-          setTranslateX(newTranslateX);
-          buttonCheck.style.transform = `translate(${newTranslateX}px, 0px)`;
+      if (window.innerWidth >= 1024) {
+        if(scale >= 4.87 && scrollTop <= 7721) {
+          if(scrollTop >= 2853.5 && scrollTop <= 7721) {
+            newTranslateY = lerp(translateY, additionalOffsetY, 1);
+            setTranslateY(newTranslateY);
+            buttonCheck.style.transform = `translate(590.4px, ${newTranslateY}px)`;
+          }else {
+            newTranslateX = lerp(translateX, additionalOffsetX, 1.7);
+            setTranslateX(newTranslateX);
+            buttonCheck.style.transform = `translate(${newTranslateX}px, 0px)`;
+          }
         }
       }
+
+      
     };
 
     window.addEventListener('scroll', handleScroll);
