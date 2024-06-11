@@ -622,6 +622,7 @@
     }
     .cAfmSi {
         display: flex;
+        flex-direction: row;
         -webkit-box-align: center;
         align-items: center;
         gap: 40px;
