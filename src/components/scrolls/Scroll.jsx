@@ -34,11 +34,12 @@ const Scroll = () => {
       
       let newTranslateY = translateY;
 
-      if (scale >= 5.7 && scrollTop <= 7748) {
+      const maxWidthMirror = window.innerWidth - 1440;
+      if (scrollTop >= 3333 && scrollTop <= 7748) {
         // Calcula la nueva posición de translateY usando interpolación lineal
         newTranslateY = lerp(translateY, additionalOffset, 0.7);
         setTranslateY(newTranslateY);
-        boxMirror.style.transform = `translate(0px, ${newTranslateY}px)`;
+        boxMirror.style.transform = `translate(${maxWidthMirror}px, ${newTranslateY}px)`;
         boxMirrorChild.style.height = "974px";
         boxMirrorChild.style.borderBottom = "90px solid #F8F8F8";
       } else {

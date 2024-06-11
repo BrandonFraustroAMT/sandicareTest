@@ -25,10 +25,6 @@ const thresholdY = 2853;
 
 const Main = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  let translateFinal  = 0;
-
-  let rightInitial = 60;
-  let widthInitial = 852;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -64,7 +60,13 @@ const Main = () => {
       setScaleVideo(newScale);
       setTranslateVideoX(newTranslateX);
 
+      // Ajustar el ancho del video basado en la fracción de scroll
+      
+
       if (window.innerWidth >= 1024) {
+        const minWidth = 852; // Ancho inicial del video
+        const maxWidth = 1320; // Ancho máximo del video
+        const targetWidth = minWidth + (scrollFraction * 26) * (maxWidth - minWidth);
         if (newScale >= 1.40) {
           if (video.paused) {
             video.play();
@@ -75,25 +77,18 @@ const Main = () => {
             video.currentTime = 0;
           }
         }
-
-        if (newScale <= 1.15) {
-          targetTranslateX = 0;
-          video.style.right = `${rightInitial}px`;
-          video.style.width = `${widthInitial}px`;
-        }
-
-
-        if (newScale < 1.5) {
-          video.style.transform = `scale(${newScale}) translate(-${newTranslateX}px, 0px)`;
+        if(targetWidth <= maxWidth) {
+          video.style.width = `${targetWidth}px`;
           video.style.right = "60px";
-          video.style.borderRadius = "25px";
-          setTranslateVideoFinal(newTranslateX);
         } else {
-          // El video se mantiene en el eje x mientras va creciendo
-          video.style.right = "12px";
-          video.style.width = "1000px";
-          video.style.borderRadius = "25px";
-          video.style.transform = `scale(${newScale}) translate(-${translateVideoFinal}px, 0px)`;
+          if(targetWidth >= maxWidth) {
+            video.style.right = "0";
+            if(targetWidth <= 1445) {
+              video.style.width = `${targetWidth}px`;
+            }
+          } else {
+            video.style.right = "60px";
+          }
         }
       }
       else {
@@ -102,6 +97,8 @@ const Main = () => {
           video.pause();
         }
         video.controls = true;
+        video.style.right = "0";
+        video.style.width = "100%";
       }
     };
 
@@ -140,6 +137,9 @@ const Main = () => {
   /* DESPLAZAMIENTO DEL BOTÓN */
   const [translateX, setTranslateX] = useState(0);
   const [translateY, setTranslateY] = useState(0);
+
+  const maxWidthMirror = 1440 - window.innerWidth;
+  const translateButtonX = 590.4 - maxWidthMirror;
   useEffect(() => {
     const handleScroll = () => {
       let buttonCheck = document.getElementById('buttonCheck');
@@ -161,7 +161,7 @@ const Main = () => {
           if(scrollTop >= 2853.5 && scrollTop <= 7721) {
             newTranslateY = lerp(translateY, additionalOffsetY, 1);
             setTranslateY(newTranslateY);
-            buttonCheck.style.transform = `translate(590.4px, ${newTranslateY}px)`;
+            buttonCheck.style.transform = `translate(${translateButtonX}px, ${newTranslateY}px)`;
           }else {
             newTranslateX = lerp(translateX, additionalOffsetX, 1.7);
             setTranslateX(newTranslateX);

@@ -32,8 +32,7 @@ function App() {
       </div>
       <Navbar />
       <Main /> 
-      <div className="barra"></div>
-        {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
