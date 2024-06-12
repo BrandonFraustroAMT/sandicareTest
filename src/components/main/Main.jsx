@@ -81,13 +81,42 @@ const Main = () => {
           video.style.width = `${targetWidth}px`;
           video.style.right = "60px";
         } else {
-          if(targetWidth >= maxWidth) {
-            video.style.right = "0";
-            if(targetWidth <= 1445) {
-              video.style.width = `${targetWidth}px`;
+          if(window.innerWidth <= 1440){
+            if(targetWidth >= maxWidth) {
+              video.style.right = "0";
+              if(targetWidth <= 1445) {
+                video.style.width = `${targetWidth}px`;
+              }
+            } else {
+              video.style.right = "60px";
+            }
+          }
+        }
+        if (window.innerWidth >= 1440) {
+          const minWidthMax = 935; // Ancho inicial del video
+          const maxWidthMax = 1320; // Ancho máximo del video
+          const targetWidthMax = minWidthMax + (scrollFraction * 26) * (maxWidthMax - minWidthMax);
+          if (newScale >= 1.40) {
+            if (video.paused) {
+              video.play();
             }
           } else {
-            video.style.right = "60px";
+            if (!video.paused) {
+              video.pause();
+              video.currentTime = 0;
+            }
+          }
+          if(targetWidthMax <= maxWidthMax) {
+            video.style.width = `${targetWidthMax}px`;
+            video.style.right = "180px";
+          } else {
+            if(targetWidthMax >= maxWidthMax) {
+              if(targetWidthMax <= 1445) {
+                video.style.width = `${targetWidthMax}px`;
+              }
+            } else {
+              video.style.right = "180px";
+            }
           }
         }
       }
@@ -96,7 +125,7 @@ const Main = () => {
         if (video.paused) {
           video.play();
         }
-        video.controls = true;
+        video.controls = false;
         video.setAttribute('webkit-playsinline', '');
         video.setAttribute('playsinline', '');
         video.style.right = "0";
@@ -158,7 +187,7 @@ const Main = () => {
       
       let newTranslateX = translateX;
       let newTranslateY = translateY;
-      if (window.innerWidth >= 1024) {
+      if (window.innerWidth >= 1024 && window.innerWidth <= 1440) {
         if(scale >= 4.87 && scrollTop <= 7721) {
           if(scrollTop >= 2853.5 && scrollTop <= 7721) {
             newTranslateY = lerp(translateY, additionalOffsetY, 1);
@@ -169,6 +198,9 @@ const Main = () => {
             setTranslateX(newTranslateX);
             buttonCheck.style.transform = `translate(${newTranslateX}px, 0px)`;
           }
+        }
+        else {
+          buttonCheck.style.transform = `translate(0px, 0px)`;
         }
       }
 

@@ -648,4 +648,34 @@
     }
 }
 
-
+@media screen and (min-width: 1441px) {
+    .gzzOVj{
+        font-size: 70px;
+        width: 100%;
+    }
+    .kFCNsa {
+        font-size: 29px;
+        width: 74%;
+    }
+    .bXdKZU{
+        display: flex;
+        flex-direction: row;
+    }
+    .jxVcyI{
+        font-size: 27px;
+    }
+    .JsuGU{
+        font-size: 50px;
+        width: 100%;
+    }
+    .cAfmSi{
+        display: flex;
+        flex-direction: row;
+    }
+    .oMLut{
+        font-size: 20px;
+    }
+    .gYooRk {
+        font-size: 63px;
+    }
+}

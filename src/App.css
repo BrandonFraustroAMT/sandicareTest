@@ -59,7 +59,7 @@
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 900px) and (max-width: 2000px) {
   .container-background svg {
     width: 70vw;
     height: 70vw;

@@ -236,3 +236,10 @@
         gap: 39px;
     }
 }
+
+@media screen and (min-width: 1441px) {
+    .dBrGFf{
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -322,3 +322,17 @@
       }
 }
 
+
+@media screen and (min-width: 1441px) {
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* place-items: center; */
+        position: relative;
+        width: 65%;
+    }
+    .dGbIGI {
+        width: 100%;
+    }
+}

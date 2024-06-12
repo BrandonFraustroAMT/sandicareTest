@@ -43,8 +43,13 @@
   transform: translateX(590px); /* Ajusta esta cantidad según sea necesario */
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 900px) and (max-width: 1440px) {
   .button-wrapper{
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-wrapper{
+    font-size: 15px;
   }
 }
