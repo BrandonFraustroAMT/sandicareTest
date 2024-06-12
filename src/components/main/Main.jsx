@@ -97,6 +97,8 @@ const Main = () => {
           video.play();
         }
         video.controls = true;
+        video.setAttribute('webkit-playsinline', '');
+        video.setAttribute('playsinline', '');
         video.style.right = "0";
         video.style.width = "100%";
       }
