@@ -93,8 +93,8 @@ const Main = () => {
       }
       else {
         // Para dispositivos móviles
-        if (!video.paused) {
-          video.pause();
+        if (video.paused) {
+          video.play();
         }
         video.controls = true;
         video.style.right = "0";
